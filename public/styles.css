@@ -1,0 +1,125 @@
+body {
+    font-family: 'Fira Code', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 260px;
+    background-color: #3442c2;
+    color: white;
+}
+
+h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.animated-arrow {
+    font-size: 60px; /* Adjust the size of the arrow */
+    display: inline-block;
+    animation: moveArrow 1s infinite; /* Animation duration and repeat */
+  }
+  
+  @keyframes moveArrow {
+    0% {
+      transform: translateY(0); /* Starting position */
+    }
+    50% {
+      transform: translateY(10px); /* Move the arrow down by 10px */
+    }
+    100% {
+      transform: translateY(0); /* Move the arrow back to the original position */
+    }
+  }
+  
+
+section {
+    margin: 20px;
+    padding: 50px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-top: 80px
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.hidden-section {
+    opacity: 0;
+    transform: translateY(50px); /* Shift them down slightly */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+.visible-section {
+    opacity: 1;
+    transform: translateY(0); /* Return to the original position */
+}
+  
+/* Styles for the navigation bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 0;
+    z-index: 1000; /* Ensure the navbar is on top of other content */
+  }
+  
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.navbar li {
+    margin: 0 15px;
+}
+  
+.navbar a {
+    color: #3442c2;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+  
+.navbar a:hover {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+  
+  
