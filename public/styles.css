@@ -25,9 +25,9 @@ p {
     font-size: 60px; /* Adjust the size of the arrow */
     display: inline-block;
     animation: moveArrow 1s infinite; /* Animation duration and repeat */
-  }
+}
   
-  @keyframes moveArrow {
+@keyframes moveArrow {
     0% {
       transform: translateY(0); /* Starting position */
     }
@@ -37,7 +37,7 @@ p {
     100% {
       transform: translateY(0); /* Move the arrow back to the original position */
     }
-  }
+}
   
 
 section {
@@ -79,7 +79,7 @@ a:hover {
     opacity: 0;
     transform: translateY(50px); /* Shift them down slightly */
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
+}
   
 .visible-section {
     opacity: 1;
@@ -94,8 +94,8 @@ a:hover {
     width: 100%;
     background-color: #ffffff;
     padding: 10px 0;
-    z-index: 1000; /* Ensure the navbar is on top of other content */
-  }
+    z-index: 1000; /* Ensure it stays on top */
+}
   
 .navbar ul {
     display: flex;
@@ -122,4 +122,111 @@ a:hover {
     border-radius: 5px;
 }
   
+/* Typing effect */
+.typing {
+    font-family: 'Fira Code', monospace;
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide text that's out of bounds */
+    border-right: 3px solid; /* Simulate the cursor */
+    width: 100%;
+    max-width: 0; /* Start with hidden text */
+    animation: typing 4s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+}
+  
+/* Typing animation */
+@keyframes typing {
+    from {
+      max-width: 0; /* Text starts hidden */
+    }
+    to {
+      max-width: 100%; /* Reveal the text fully */
+    }
+}
+  
+/* Blinking cursor animation */
+@keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgb(255, 255, 255); /* Change color for blinking effect */
+    }
+}
+  
+
+/* Style for the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-around; /* Spread items evenly */
+    background-color: #3442c2; /* Dark background for contrast */
+    padding: 10px;
+}
+  
+/* Style for the links in the navigation bar */
+.navbar a {
+    color: white; /* Default text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+  
+/* Hover effect for the links in the navbar */
+  .navbar a:hover {
+    color: #3442c2; /* Change to gold color when hovered */
+}
+
+/* Container for the projects */
+.projects-container {
+    display: flex; /* Arrange projects side by side */
+    justify-content: space-between; /* Space between the projects */
+    flex-wrap: wrap; /* Allow wrapping if the screen is small */
+    gap: 20px; /* Space between project blocks */
+    padding: 20px;
+}
+  
+/* Style for individual project blocks */
+.project {
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    flex: 1; /* Grow to fill available space */
+    min-width: 250px; /* Minimum width for responsiveness */
+    max-width: 30%; /* Ensure blocks don’t get too wide */
+    text-align: center;
+}
+  
+/* Button styling */
+button {
+    background-color: #3442c2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+  
+button:hover {
+    background-color: white;
+    color: #3442c2;
+}
+
+/* Style the icons and contact links */
+#contact i {
+    margin-right: 10px; /* Space between icon and text */
+}
+  
+#contact a {
+    color: #3442c2;
+    text-decoration: underline;
+    transition: color 0.3s ease; /* Smooth transition effect */
+}
+  
+/* Hover effect for the links */
+#contact a:hover {
+    color: darkblue; /* Change to darker blue on hover */
+}
+    
   
