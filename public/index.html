@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -15,12 +16,12 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#work">Work Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#activities">Extracurricular Activities</a></li>
             <li><a href="#contact">Contact Info</a></li>
         </ul>
     </nav>
     <header>
-        <h1>Mennatallah Ashraf</h1>
+        <h1 class="typing">Mennatallah Ashraf</h1>
         <p>Software Engineer | DevOps Engineer</p>
         <span class="animated-arrow">&#8659;</span>
     </header>
@@ -34,7 +35,7 @@
     <section id="education" class="hidden-section">
         <h2>Education</h2>
         <ul>
-            <li><strong>Bachelor's Degree in Electronics and Communications Engineering</strong> - Alexandria University (2025)</li>
+            <li><strong>Bachelor's Degree in Electronics and Communications Engineering</strong> - Alexandria University (October 2020 - June 2025)</li>
             <li> <strong>Relevant Coursework:</strong> Operating Systems, Data Structures, Computers and Programming, Embedded Systems,
                 Computational Mathematics, Probability, Project Management</li>
         </ul>
@@ -59,35 +60,61 @@
             <li><strong>Dell Technologies</strong> - Summer Academy Intern (August 2024 - September 2024)</li>
             <p> • Developed and presented the backend of a web application that calculated cost comparisons between diesel and solar energy systems for off-grid cell towers based on geographical data, collaborating with a team of 8 members to deliver the solution.</p>
             <p> • Utilized Node.js and integrated the PVWatts API to calculate solar energy production, enabling accurate cost comparisons between diesel and solar systems for telecom companies.</p>
-            <p> • </p>
-            <li><strong>Another Job Title</strong> - Another Company (Year)</li>
-            <p>Brief description of the work done at this company.</p>
+            <p> • Participated in sessions on project management, technical leadership skills, microservices architecture,
+                continuous integration/continuous deployment (CI/CD), DevOps practices, and automated testing.</p>
+            <li><strong>Gad Foundation</strong> -  Programming and Robotics Instructor (July 2023 - August 2023)</li>
+            <p> • Designed and delivered comprehensive Scratch and Python programming courses for students aged 6-12 years, while
+                also instructing them on the fundamentals of circuit design, and breadboarding.</p>
+            <p> • Enabled students to foster a deeper understanding of electronics and robotics by facilitating interactive and hands-on
+                learning experiences. Students successfully created a variety of projects using Scratch and Python.</p>
+            <p> • Monitored and assessed student progress, providing constructive feedback to enhance their coding and robotics skills.</p>
         </ul>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="hidden-section">
+    <section id="projects">
         <h2>Projects</h2>
-        <div id="projects"></div>
-    </section>
+        <div class="projects-container">
+          <div class="project">
+            <h3>PintOS</h3>
+            <p>Developed an operating system kernel as part of the Pintos project.</p>
+            <button onclick="window.open('https://github.com/salmahamdy/pintos_phase1_threads')">View on GitHub</button>
+          </div>
+          <div class="project">
+            <h3>ECE-FOE</h3>
+            <p>Created a responsive front-end web application for over 200 students.</p>
+            <button onclick="window.open('https://github.com/Mennatallah9/ECE-FOE')">View on GitHub</button>
+          </div>
+          <div class="project">
+            <h3>ChatNow</h3>
+            <p>Developed a real-time chat website using Node.js and WebSocket.</p>
+            <button onclick="window.open('https://github.com/Mennatallah9/ChatNow')">View on GitHub</button>
+          </div>
+        </div>
+      </section>
+      
 
-    <!-- Achievements Section -->
-    <section id="achievements" class="hidden-section">
-        <h2>Achievements</h2>
+    <!-- Extracurricular Activities Section -->
+    <section id="activities" class="hidden-section">
+        <h2>Extracurricular Activities</h2>
         <ul>
-            <li>Award or recognition</li>
-            <li>Certification or major achievement</li>
+            <li> • Volunteered in the Software Subteam (Back-End Web Development Department) of <strong>IEEE SSCS ALEX SC</strong>, worked
+                on developing APIs using MongoDB, Express.js and Node.js.</li>
+            <li> • Successfully accomplished the <strong>Lyft Back-End Engineering Virtual Experience Program</strong> and completed tasks in
+                software architecture, refactoring, unit testing, and test-driven development.</li>
         </ul>
     </section>
 
     <!-- Contact Info Section -->
-    <section id="contact" class="hidden-section">
+    <section id="contact">
         <h2>Contact Info</h2>
         <ul>
-            <li>Email: 	mennatallah.a.haggag@gmail.com</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/mennatallahhaggag/">mennatallahhaggag</a></li>
+          <li><a href="mailto:mennatallah.a.haggag@gmail.com"><i class="fas fa-envelope"></i>mennatallah.a.haggag@gmail.com</a></li>
+          <li><a href="https://github.com/Mennatallah9" target="_blank"><i class="fab fa-github"></i>Mennatallah9</a></li>
+          <li><a href="https://www.linkedin.com/in/mennatallahhaggag/" target="_blank"><i class="fab fa-linkedin"></i>mennatallahhaggag</a></li>
         </ul>
-    </section>
+      </section>      
+      
 
     <script src="script.js"></script>
 </body>
